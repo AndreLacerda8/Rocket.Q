@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title><%= title %> </title>
+        <script>
+            if('<%= roomId %>' == 'null'){
+                confirm('Sala não encontrada')//isso é tipo um alert
+                window.location.replace('/')
+            }
+            else{
+                confirm('Senha incorreta')
+                window.location.replace('/room/<%= roomId %>')
+            }
+        </script>
+    </head>
+</html>
